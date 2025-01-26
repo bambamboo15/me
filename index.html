@@ -10,10 +10,27 @@
 				font-family: "Roboto";
 				font-size: 16px;
 				padding: 0;
-				margin: 20px;
+				margin: 0 20px 20px 20px;
+				background-color: #f5f5f5;
+			}
+			.centered {
+				text-align: center;
+			}
+			.information {
+				margin: 20px 0;
+			}
+			.information > * {
+				margin: 0;
+			}
+			.picture {
+				margin: 20px 0;
+			}
+			.picture > * {
+				margin: 0;
+				padding: 0;
 			}
 			.subheading {
-				background-color: #f2f2f2;
+				background-color: #eaeaea;
 				padding: 15px;
 				margin: 0 0 15px 0;
 				border-radius: 10px;
@@ -26,9 +43,6 @@
 			.subheading > h2 {
 				margin: 0 0 10px 0;
 			}
-			.centered {
-				text-align: center;
-			}
 			ul {
 				list-style-type: square;
 			}
@@ -37,22 +51,24 @@
 	<body>
 		<!-- The top centered portion -->
 		<div class="centered">
-			<!-- The title -->
-			<h1 style="margin-bottom: 0">Benyamin Bamburac’s Introductions Website</h1>
-
-			<!-- The information -->
-			<p style="margin-top: 0">
-				Lewis University email: <a href="mailto:benyaminfbamburac@lewisu.edu">benyaminfbamburac@lewisu.edu</a>
-				<span style="color: rgba(0.0, 0.0, 0.0, 0.2); user-select: none">
-					&nbsp;&nbsp;||&nbsp;&nbsp;
-				</span>
-				Discord username: <a href="javascript:void">bambamboo15</a>
-			</p>
+			<!-- The title and information-->
+			<div class="information">
+				<h1>Benyamin Bamburac’s Introductions Website</h1>
+				<p>
+					Lewis University email: <a href="mailto:benyaminfbamburac@lewisu.edu">benyaminfbamburac@lewisu.edu</a>
+					<span style="color: rgba(0.0, 0.0, 0.0, 0.2); user-select: none">
+						&nbsp;&nbsp;||&nbsp;&nbsp;
+					</span>
+					Discord username: <a href="javascript:void">bambamboo15</a>
+				</p>
+			</div>
 
 			<!-- The picture -->
-			<a href="./placeholder-300-by-300.jpg">
-				<img src="./placeholder-800-by-800.jpg" alt="Picture of me">
-			</a>
+			<div class="picture">
+				<a href="./placeholder-300-by-300.jpg">
+					<img src="./placeholder-800-by-800.jpg" alt="Picture of me">
+				</a>
+			</div>
 		</div>
 
 		<!-- All of the subheadings -->
